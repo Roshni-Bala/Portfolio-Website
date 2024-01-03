@@ -1263,3 +1263,19 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools {
+  color: lightgrey;
+  font-size: 12px;
+}
+
+.year {
+  color: lightgrey;
+  font-size: 12px;
+  margin-left: auto;
+}
