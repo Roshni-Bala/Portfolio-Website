@@ -102,16 +102,16 @@
               </div>
             </div>
           </div><!-- End Info Item -->
-
           <div class="col-lg-3">
             <div class="info-item d-flex">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email</h4>
-                <p>roshni.balasubramanian@duke.edu</p>
+                <p class="email-address" onclick="copyEmail()">roshni.balasubramanian@duke.edu</p>
               </div>
             </div>
           </div><!-- End Info Item -->
+          
 
           <!-- <div class="col-lg-3">
             <div class="info-item d-flex">
@@ -125,7 +125,7 @@
 
         </div>
 
-        <div class="row justify-content-center mt-4">
+        <!-- <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -152,7 +152,7 @@
             </form>
           </div><!-- End Contact Form -->
 
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Contact Section -->
@@ -190,6 +190,28 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>function copyEmail() {
+    const emailText = document.querySelector('.email-address').innerText;
+  
+    // Create a temporary textarea element to perform the copy operation
+    const textarea = document.createElement('textarea');
+    textarea.value = emailText;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    
+    // Select and copy the email text
+    textarea.select();
+    document.execCommand('copy');
+  
+    // Remove the temporary textarea
+    document.body.removeChild(textarea);
+  
+    // Optionally, you can provide visual feedback to the user
+    alert('Email address copied to clipboard: ' + emailText);
+  }
+  </script>
 
 </body>
 

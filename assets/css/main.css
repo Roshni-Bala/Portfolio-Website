@@ -1292,3 +1292,6 @@ h6 {
   color: #ffffffd5;
   background: #0b50ac;
 }
+.email-address {
+  cursor: pointer;
+}
