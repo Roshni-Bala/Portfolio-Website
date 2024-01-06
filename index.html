@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <html lang="en">
 
 <head>
@@ -96,6 +97,7 @@
           <h2>Hello! I'm <span>Roshni</span></h2>
           <p>Analytics. Strategy. Innovation.</p>
           <a href="contact.html" class="btn-get-started">Available for hire</a>
+          <br><br><br>
         </div>
       </div>
     </div>
@@ -105,21 +107,109 @@
 <!-- ======= Services Section =======+-->
 <section id="services" class="services">
   <div class="container">
-
+    <p>Filters:</p>
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+    <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+    <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+    <button class="filter-btn" data-filter="data-visualization">Data Visualization</button>
+    <br><br>
     <div class="row gy-4">
-
+      <!-- AppliRec: User-Based Collaborative Filtering for Appliances-->
       <div class="col-xl-3 col-md-6 d-flex">
-        <div class="service-item position-relative">
-          <i class="bi bi-activity"></i>
-          <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        <div class="service-item position-relative" data-tags="deep-learning">
+          <i class="bi bi-amazon"></i>
+          <h4><a href="https://github.com/Roshni-Bala/Product-Recommendation-System" class="stretched-link">
+            Recommendation System for Amazon Appliances</a></h4>
+          <p>Created a multilevel neural network user-based collaborative filtering recommendation system for Amazon appliance product. First, product review discrepancies were identified using a Sentiment RNN, next the user based collaborative filtering system was applied. The error was within 0.1 unit MAE of the benchmark model.</p>
+          <p class="service-info">
+            <span class="tools">Tools: Python, PyTorch</span>
+            <span class="year">2023</span>
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+      <!-- TrackTracer: Analyzing Audio Features for Social Media Track Popularity Estimation -->
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="service-item position-relative" data-tags="machine-learning">
+          <i class="bi bi-spotify"></i>
+          <h4><a href="https://github.com/Roshni-Bala/Spotify-DS4Business" class="stretched-link">
+            Hit Song Prediction</a></h4>
+          <p>
+            Developed a predictive model designed to identify potential hit songs for short video advertising. This model could offer valuable insights for advertisers seeking to stay ahead of music trends and align their content accordingly.</p>
+          <p class="service-info">
+            <span class="tools">Tools: Python, Scikit Learn, PowerBI, Spotipy (Spotify API) </span>
+            <span class="year">2023</span>
+            
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+      <!-- PCG ECG Abnormality Detection -->
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="service-item position-relative" data-tags="deep-learning machine-learning">
+          <i class="bi bi-soundwave"></i>
+          <h4><a href="https://github.com/Abhinand-and-Roshni/PCG-ECG-UI" class="stretched-link">
+            Cardiovascular Abnormality Detection</a></h4>
+          <p>
+            Abnormality detection using a multitude of steps such as signal feature extraction, image feature extraction, image segmentation, autoencoders, dynamic time warping. This work has been published in Springer Journals as part of my undergraduate degree capstone.
+          </p>
+          <p class="service-info">
+            <span class="tools">Tools: Python, MATLAB, Tanagra </span>
+            <span class="year">2023</span>
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+        <!-- Breast Cancer Risk Prediction -->
+        <div class="col-xl-3 col-md-6 d-flex">
+          <div class="service-item position-relative" data-tags="machine-learning">
+            <i class="bi bi-prescription2"></i>
+            <h4><a href="https://github.com/Roshni-Bala/Breast-Cancer-Risk-Prediction" class="stretched-link">
+              Breast Cancer Risk Prediction</a></h4>
+            <p>
+              Used the UCI breast cancer dataset to analyze and build an stacked ensemble model with accuracy of 97.99%
+            </p>
+            <p class="service-info">
+              <span class="tools">Tools: Python, Scikit Learn, Streamlit</span>
+              <span class="year">2022</span>
+            </p>
+          </div>
+        </div><!-- End Service Item -->
+      
+      <!-- Web Phishing Detection -->
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="service-item position-relative" data-tags="machine-learning">
+          <i class="bi bi-shield-fill-check"></i>
+          <h4><a href="https://github.com/Roshni-Bala/IBM-Project-1205-1658378450" class="stretched-link">
+            IBM: Web Phishing Detection</a></h4>
+          <p>
+            Website for detection of web phishing attacks using URL of site
+          </p>
+          <p class="service-info">
+            <span class="tools">Tools: Python, Scikit Learn, IBM Watson Services</span>
+            <span class="year">2022</span>
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+      <!-- Crop Disease Detection -->
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="service-item position-relative" data-tags="deep-learning">
+          <i class="bi bi-images"></i>
+          <h4><a href="https://github.com/Roshni-Bala/Crop-Disease-Detection-NIC_AP" class="stretched-link">
+            Crop Disease Detection</a></h4>
+          <p>
+            Scraped data from IMDb and TN Government Sites. Analyzed data to find correlation between alcohol and crime rates from top Tamil Movies that showcase alcohol usage and violence.
+          </p>
+          <p class="service-info">
+            <span class="tools">Tools: Python, Pandas, BeautifulSoup</span>
+            <span class="year">2022</span>
+          </p>
         </div>
       </div><!-- End Service Item -->
 
       <!-- Movies Alcohol Data Analysis -->
       <div class="col-xl-3 col-md-6 d-flex">
-        <div class="service-item position-relative">
-          <i class="bi bi-whatsapp"></i>
+        <div class="service-item position-relative" data-tags="data-analysis data-visualization">
+          <i class="bi bi-skip-end-btn-fill"></i>
           <h4><a href="https://github.com/Roshni-Bala/Movies-Alcohol-Data-Analysis" class="stretched-link">
             Effect of Scripted Violence & Alcoholism on Tamil Nadu</a></h4>
           <p>
@@ -134,7 +224,7 @@
 
       <!-- Sentiment Analysis Paati's Chat -->
       <div class="col-xl-3 col-md-6 d-flex">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative" data-tags="data-analysis data-visualization">
           <i class="bi bi-whatsapp"></i>
           <h4><a href="https://github.com/Roshni-Bala/Sentiment-Analysis-WhatsApp" class="stretched-link">Sentiment Analysis on Grandma's WhatsApp Chat</a></h4>
           <p>
@@ -150,7 +240,7 @@
 
       <!-- KPMG Data Viz Project -->
       <div class="col-xl-3 col-md-6 d-flex">
-        <div class="service-item position-relative">
+        <div class="service-item position-relative" data-tags="data-analysis data-visualization">
           <i class="bi bi-graph-up"></i>
           <h4><a href="https://drive.google.com/file/d/1RM8nmpy3BRmZB-UA5SvLMX6Y-2C8IfVk/view?usp=sharing" class="stretched-link">Customer Segmentation & Visualization</a></h4>
           <p>Visualizing historical customer demographic data to segment potential customers for suitable reward programs and marketing campaigns</p>
@@ -200,6 +290,36 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+  $('.filter-btn').on('click', function () {
+    const filterValue = $(this).attr('data-filter');
+    const allItems = $('.service-item');
+    const filteredItems = $('.service-item[data-tags*="' + filterValue + '"]');
+    
+    // Hide all items
+    allItems.hide();
+    
+    // Show filtered items at the top
+    filteredItems.each(function(index) {
+      $(this).fadeIn();
+      if (index < 4) {
+        // Append the filtered items to the top row
+        $('.row gy-4').prepend($(this).clone());
+      }
+    });
+
+    // Show other items below the filtered items
+    allItems.not(filteredItems).each(function() {
+      if (!$(this).is(':visible')) {
+        $(this).fadeIn();
+        $('.row gy-4').append($(this).clone());
+      }
+    });
+  });
+});
+
+  </script>
 
 </body>
 

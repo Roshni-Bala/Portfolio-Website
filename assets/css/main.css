@@ -1279,3 +1279,16 @@ h6 {
   font-size: 12px;
   margin-left: auto;
 }
+
+.filter-btn {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #ffffffd5;
+  background: #0b50ac;
+}
