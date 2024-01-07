@@ -1267,18 +1267,16 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 
 .tools {
+  position: absolute;
   color: lightgrey;
   font-size: 12px;
+  bottom: 0;
 }
 
-.year {
-  color: lightgrey;
-  font-size: 12px;
-  margin-left: auto;
-}
 
 .filter-btn {
   font-family: var(--font-primary);
